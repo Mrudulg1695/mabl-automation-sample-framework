@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Trigger Mabl Regression Tests') {
+      steps {
+        sh """
+          curl -X POST https://api.mabl.com/v1/runs \
+          -H "Authorization: API_KEY ${MABL_API_KEY}" \
+          -d '{ "planId": "reg-plan-001" }'
+        """
+      }
+    }
+  }
+}

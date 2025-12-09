@@ -1,0 +1,11 @@
+{
+  "name": "Premium Calculation Test",
+  "steps": [
+    { "action": "goTo", "url": "{{baseUrl}}/premium" },
+    { "action": "setText", "selector": "#age", "value": "35" },
+    { "action": "setText", "selector": "#income", "value": "120000" },
+    { "action": "click", "selector": "#calculateBtn" },
+    { "action": "waitForElement", "selector": "#premiumResult" },
+    { "action": "assertNotEmpty", "selector": "#premiumResult" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "environments": [
+    {
+      "id": "env-qa",
+      "name": "QA",
+      "baseUrl": "https://qa.demo-insurance-portal.com"
+    },
+    {
+      "id": "env-staging",
+      "name": "Staging",
+      "baseUrl": "https://staging.demo-insurance-portal.com"
+    }
+  ]
+}

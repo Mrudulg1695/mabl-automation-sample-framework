@@ -1,0 +1,10 @@
+{
+  "planId": "smoke-plan-001",
+  "name": "Smoke Test Plan",
+  "description": "Critical path smoke tests for NYL portal",
+  "tests": [
+    "ui-tests/login-test.json",
+    "api-tests/get-policy-details.json"
+  ],
+  "parallel": true
+}

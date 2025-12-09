@@ -1,0 +1,14 @@
+{
+  "name": "Create Customer API",
+  "method": "POST",
+  "url": "{{baseUrl}}/api/customer",
+  "body": {
+    "name": "Alex Carter",
+    "age": 30,
+    "income": 95000
+  },
+  "assertions": [
+    { "equals": { "path": "status", "value": 201 } },
+    { "exists": { "path": "body.customerId" } }
+  ]
+}

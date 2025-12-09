@@ -1,0 +1,9 @@
+{
+  "name": "Get Policy Details API",
+  "method": "GET",
+  "url": "{{baseUrl}}/api/policies/1001",
+  "assertions": [
+    { "equals": { "path": "status", "value": 200 } },
+    { "contains": { "path": "body.policyHolder", "value": "John Doe" } }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Payment Status API",
+  "method": "GET",
+  "url": "{{baseUrl}}/api/payments/status/TXN-001",
+  "assertions": [
+    { "equals": { "path": "status", "value": 200 } },
+    { "oneOf": { "path": "body.status", "values": ["SUCCESS", "FAILED"] } }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "planId": "reg-plan-001",
+  "name": "Regression Test Plan",
+  "description": "Full UI + API regression suite",
+  "tests": [
+    "ui-tests/login-test.json",
+    "ui-tests/policy-search-test.json",
+    "ui-tests/premium-calculation-test.json",
+    "api-tests/get-policy-details.json",
+    "api-tests/create-customer.json",
+    "api-tests/payment-status.json"
+  ],
+  "parallel": true
+}

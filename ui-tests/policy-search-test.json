@@ -1,0 +1,10 @@
+{
+  "name": "Policy Search Test",
+  "steps": [
+    { "action": "goTo", "url": "{{baseUrl}}/policies" },
+    { "action": "setText", "selector": "#policySearch", "value": "PLCY-1001" },
+    { "action": "click", "selector": "#searchBtn" },
+    { "action": "waitForElement", "selector": ".policy-details" },
+    { "action": "assertText", "selector": ".policyholder-name", "value": "John Doe" }
+  ]
+}

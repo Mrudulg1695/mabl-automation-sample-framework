@@ -1,0 +1,11 @@
+{
+  "name": "Login Test",
+  "steps": [
+    { "action": "goTo", "url": "{{baseUrl}}/login" },
+    { "action": "setText", "selector": "#username", "value": "{{testUser.username}}" },
+    { "action": "setText", "selector": "#password", "value": "{{testUser.password}}" },
+    { "action": "click", "selector": "#loginBtn" },
+    { "action": "waitForElement", "selector": "#dashboard" },
+    { "action": "assertElementPresent", "selector": "#dashboard" }
+  ]
+}
